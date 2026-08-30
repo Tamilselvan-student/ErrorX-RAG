@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-bg-950 text-slate-200 font-sans antialiased;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(6, 182, 212, 0.09), transparent),
+    radial-gradient(ellipse 40% 30% at 90% 110%, rgba(52, 211, 153, 0.05), transparent);
+  background-attachment: fixed;
+}
+
+/* Thin, themed scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #26506b;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2f7aa6;
+}
+
+.prose-errorlens {
+  @apply text-slate-300 leading-relaxed text-[15px];
+}
+.prose-errorlens h2 {
+  @apply text-cyan-300 font-semibold text-lg mt-8 mb-3 pb-2 border-b border-bg-700;
+}
+.prose-errorlens h3 {
+  @apply text-slate-100 font-semibold text-base mt-5 mb-2;
+}
+.prose-errorlens p {
+  @apply my-3;
+}
+.prose-errorlens ul {
+  @apply list-disc pl-6 my-3 space-y-1.5;
+}
+.prose-errorlens ol {
+  @apply list-decimal pl-6 my-3 space-y-1.5;
+}
+.prose-errorlens li::marker {
+  @apply text-accent-500;
+}
+.prose-errorlens code {
+  @apply font-mono text-[13px] bg-bg-800 text-cyan-200 px-1.5 py-0.5 rounded;
+}
+.prose-errorlens pre {
+  @apply bg-bg-900 border border-bg-700 rounded-lg p-4 my-4 overflow-x-auto;
+}
+.prose-errorlens pre code {
+  @apply bg-transparent text-slate-200 p-0 text-[13px];
+}
+.prose-errorlens strong {
+  @apply text-slate-100;
+}

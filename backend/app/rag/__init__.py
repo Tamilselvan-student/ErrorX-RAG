@@ -1,0 +1,1 @@
+"""RAG pipeline subpackage: ingestion, embedding, retrieval, prompts."""

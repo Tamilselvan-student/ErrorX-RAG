@@ -1,0 +1,1 @@
+"""Service layer: analysis, query building, context assembly, confidence, LLM."""
